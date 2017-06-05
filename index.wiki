@@ -6,6 +6,8 @@ El término '''[http://www.aromeo.net/?p=746 locapedia]'''<ref>También se les c
 
 La locapedia con mayor número de artículos es <a href="https://cordobapedia.wikanda.es">Cordobapedia</a> que cuenta con más de 17000.
 
+== Mapa ==
+
 <div id="map" style="width: 100%; height: 400px;"></div>
 
 <script>
@@ -54,8 +56,10 @@ La locapedia con mayor número de artículos es <a href="https://cordobapedia.wi
     
 </script>
 
+== Estadísticas ==
+
 <center>
-<table class="wikitable sortable" style="text-align: center;">
+<table class="wikitable sortable" style="width: 100%;text-align: center;">
 <tr>
     <th class="sorttable_alpha">Wiki</th>
     <th class="sorttable_alpha">Ámbito</th>
@@ -224,5 +228,4 @@ La locapedia con mayor número de artículos es <a href="https://cordobapedia.wi
 {{reflist}}
 {{reflist-end}}
 
-__NOTOC__
 {{footer}}

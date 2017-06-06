@@ -14,6 +14,10 @@ a:hover, a:active{
 }
 
 div.footer{
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px 0px 10px;
     padding-bottom: 40px;
 }
 

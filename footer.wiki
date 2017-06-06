@@ -1,5 +1,7 @@
 <div class="footer">
-
+<hr/>
+<a href="http://fondos.org.es">Fondos de pantalla</a> · 
+<a href="http://wikis.org.es">Wikis</a>
 </div>
 
 </body>

@@ -3,22 +3,27 @@ body{
     font-size: 100%;
     margin: auto;
     width: 800px;
-    /*background: -webkit-linear-gradient(left, #ffd78d, #edf29b 1240px, white 100%, white);*/
+    padding: 0px 5px 0px 5px;
+    background: #F6F6F6;
+    text-align: justify;
 }
-
 a:link, a:visited{
     text-decoration: none;
 }
 a:hover, a:active{
     text-decoration: underline;
 }
-
+div.main{
+    background: #E6E6FA;
+    box-shadow: 0 0 15px 10px #E6E6FA;
+    padding: 5px;
+}
 div.footer{
     clear: both;
     width: 100%;
     text-align: center;
     margin: 10px 0px 0px 10px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 img{

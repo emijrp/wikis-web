@@ -1,4 +1,6 @@
 {{headerleaflet|1=Portada}}
+<div class="main">
+= [[./index|Directorio de locapedias]] =
 
 La primera '''enciclopedia wiki''' sobre un municipio de la que se tiene constancia es la de [http://www.arija.org/es/index.php?title=Portada Arija], situado en la provincia de Burgos, que fue creada en 2003.
 
@@ -230,3 +232,6 @@ Si quieres crear una locapedia, puedes hacerlo fácilmente en el <a href="https:
 {{reflist-end}}
 
 {{footer}}
+
+</div>
+

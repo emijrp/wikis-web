@@ -49,28 +49,28 @@
     // http://leafletjs.com/examples/custom-icons.html
     
     var wikis = [
-        ["Almeriapedia", 36.841093, -2.471810, "https://almeriapedia.wikanda.es"], 
-        ["Arija", 42.985593, -3.959270, "http://www.arija.org"], 
-        ["Cadizpedia", 36.526195, -6.288580, "https://cadizpedia.wikanda.es"], 
-        ["Cordobapedia", 37.878912, -4.779711, "https://cordobapedia.wikanda.es"], 
-        ["CTpedia", 37.625306, -0.996939, "http://www.ctpedia.es"], 
-        ["Enciclopedia de Oviedo", 43.361862, -5.849755, "http://el.tesorodeoviedo.es"], 
-        ["Enciclopedia Guanche", 28.270707, -16.639319, "http://www.guanches.org/enciclopedia/"], 
-        ["Granadapedia", 37.176061, -3.588268, "https://granadapedia.wikanda.es"], 
-        ["Huelvapedia", 37.237506, -6.979196, "https://huelvapedia.wikanda.es"], 
-        ["Jaenpedia", 37.237506, -6.979196, "https://jaenpedia.wikanda.es"], 
-        ["JerezSiempre", 36.680909, -6.139711, "http://www.jerezsiempre.com"], 
-        ["Madripedia", 40.416950, -3.703481, "https://madripedia.wikis.cc"], 
-        ["Malagapedia", 36.719882, -4.419761, "https://malagapedia.wikanda.es"], 
-        ["Rosespedia", 42.261610, 3.175204, "http://www.rosespedia.cat"], 
-        ["Sevillapedia", 37.382890, -5.989876, "https://sevillapedia.wikanda.es"], 
-        ["Tarracowiki", 41.118859, 1.244362, "http://www.tarracowiki.cat"], 
-        ["Vilapedia", 39.939647, -0.100679, "https://vilapedia.wikis.cc"], 
-        ["WikiBurgos", 42.340700, -3.704016, "http://www.wikiburgos.es"], 
-        ["WikiMurcia", 37.983984, -1.128697, "http://wikimurcia.com"], 
-        ["WikiRioja", 42.332363, -2.520562, "http://wikirioja.com"], 
-        ["WikiSalamanca", 40.965066, -5.663855, "https://wikisalamanca.wikis.cc"], 
-        ["Xilocapedia", 40.934438, -1.309081, "http://xiloca.org/xilocapedia/"], 
+        ["Almeriapedia", 36.841093, -2.471810, "https://almeriapedia.wikanda.es", "almeriapedia-logo.png"], 
+        ["Arija", 42.985593, -3.959270, "http://www.arija.org", "arija-logo.png"], 
+        ["Cadizpedia", 36.526195, -6.288580, "https://cadizpedia.wikanda.es", "cadizpedia-logo.png"], 
+        ["Cordobapedia", 37.878912, -4.779711, "https://cordobapedia.wikanda.es", "cordobapedia-logo.png"], 
+        ["CTpedia", 37.625306, -0.996939, "http://www.ctpedia.es", "ctpedia-logo.png"], 
+        ["Enciclopedia de Oviedo", 43.361862, -5.849755, "http://el.tesorodeoviedo.es", "oviedo-logo.jpg"], 
+        ["Enciclopedia Guanche", 28.270707, -16.639319, "http://www.guanches.org/enciclopedia/", "guanches-logo.png"], 
+        ["Granadapedia", 37.176061, -3.588268, "https://granadapedia.wikanda.es", "granadapedia-logo.png"], 
+        ["Huelvapedia", 37.237506, -6.979196, "https://huelvapedia.wikanda.es", "huelvapedia-logo.png"], 
+        ["Jaenpedia", 37.779784, -3.784721, "https://jaenpedia.wikanda.es", "jaenpedia-logo.png"], 
+        ["JerezSiempre", 36.680909, -6.139711, "http://www.jerezsiempre.com", "jerezsiempre-logo.png"], 
+        ["Madripedia", 40.416950, -3.703481, "https://madripedia.wikis.cc", "madripedia-logo.png"], 
+        ["Malagapedia", 36.719882, -4.419761, "https://malagapedia.wikanda.es", "malagapedia-logo.png"], 
+        ["Rosespedia", 42.261610, 3.175204, "http://www.rosespedia.cat", "rosespedia-logo.png"], 
+        ["Sevillapedia", 37.382890, -5.989876, "https://sevillapedia.wikanda.es", "sevillapedia-logo.png"], 
+        ["Tarracowiki", 41.118859, 1.244362, "http://www.tarracowiki.cat", "tarracowiki-logo.png"], 
+        ["Vilapedia", 39.939647, -0.100679, "https://vilapedia.wikis.cc", "vilapedia-logo.jpg"], 
+        ["WikiBurgos", 42.340700, -3.704016, "http://www.wikiburgos.es", "wikiburgos-logo.png"], 
+        ["WikiMurcia", 37.983984, -1.128697, "http://wikimurcia.com", "wikimurcia-logo.png"], 
+        ["WikiRioja", 42.332363, -2.520562, "http://wikirioja.com", "wikirioja-logo.png"], 
+        ["WikiSalamanca", 40.965066, -5.663855, "https://wikisalamanca.wikis.cc", "wikisalamanca-logo.png"], 
+        ["Xilocapedia", 40.934438, -1.309081, "http://xiloca.org/xilocapedia/", "xilocapedia-logo.png"], 
 
 ];
     
@@ -85,8 +85,9 @@
 
     for (var i = 0; i < wikis.length; i++) {
         marker = new L.marker([wikis[i][1],wikis[i][2]])
-            .bindPopup('<b><a href="' + wikis[i][3] + '">' + wikis[i][0] + '</a></b>')
+            .bindPopup('<b><a href="' + wikis[i][3] + '">' + wikis[i][0] + '</a></b><br/><a href="' + wikis[i][3] + '"><img src="images/' + wikis[i][4] + '" width="200px" /></a>')
             .addTo(map);
+        if ( wikis[i][0] === "Cadizpedia" ) { marker.openPopup(); }
     }
     
 </script>

@@ -1,14 +1,12 @@
 {{headerleaflet|1=Portada}}
 <div class="main">
-= [[./index|Directorio de locapedias]] =
+= [[./index|Mapa de locapedias]] =
 
 La primera '''enciclopedia wiki''' sobre un municipio de la que se tiene constancia es la de [http://www.arija.org/es/index.php?title=Portada Arija], situado en la provincia de Burgos, que fue creada en 2003.
 
 El término '''[http://www.aromeo.net/?p=746 locapedia]'''<ref>También se les conoce como localpedias, citywikis o regiowikis.</ref> fue acuñado tiempo después y desde entonces fueron surgiendo más proyectos wiki que recopilaban conocimiento local acerca de multitud de localidades, provincias y otras regiones. La locapedia con mayor número de artículos es <a href="https://cordobapedia.wikanda.es">Cordobapedia</a> que cuenta con más de 17000.
 
 Si quieres crear una locapedia, puedes hacerlo fácilmente en el <a href="https://wikis.cc">hosting de Wikis.cc</a>.
-
-== Mapa ==
 
 <div id="map" style="width: 100%; height: 400px;"></div>
 
@@ -52,14 +50,12 @@ Si quieres crear una locapedia, puedes hacerlo fácilmente en el <a href="https:
 
     for (var i = 0; i < wikis.length; i++) {
         marker = new L.marker([wikis[i][1],wikis[i][2]])
-            .bindPopup('<b><a href="' + wikis[i][3] + '">' + wikis[i][0] + '</a></b><br/><a href="' + wikis[i][3] + '"><img src="images/' + wikis[i][4] + '" width="200px" /></a>')
+            .bindPopup('<b><a href="' + wikis[i][3] + '">' + wikis[i][0] + '</a></b><br/><a href="' + wikis[i][3] + '" title="Acceder a ' + wikis[i][0] + '"><img src="images/' + wikis[i][4] + '" width="200px" alt="Logotipo de ' + wikis[i][0] + '" /></a>')
             .addTo(map);
         if ( wikis[i][0] === "Cadizpedia" ) { marker.openPopup(); }
     }
     
 </script>
-
-== Estadísticas ==
 
 <center>
 <table class="wikitable sortable" style="width: 100%;text-align: center;">
@@ -162,7 +158,7 @@ Si quieres crear una locapedia, puedes hacerlo fácilmente en el <a href="https:
     <td>2007</td>
 </tr>
 <tr>
-    <td><a href="http://www.rosespedia.cat">Roses</a></td>
+    <td><a href="http://www.rosespedia.cat">Rosèspedia</a></td>
     <td>Roses</td>
     <td>500+</td>
     <td>100+</td>
@@ -183,7 +179,7 @@ Si quieres crear una locapedia, puedes hacerlo fácilmente en el <a href="https:
     <td>2010</td>
 </tr>
 <tr>
-    <td><a href="https://vilapedia.wikis.cc">Vilapedia</a></td>
+    <td><a href="https://vilapedia.wikis.cc">Vilapèdia</a></td>
     <td>Villareal</td>
     <td>900+</td>
     <td>800+</td>
@@ -227,7 +223,6 @@ Si quieres crear una locapedia, puedes hacerlo fácilmente en el <a href="https:
 </table>
 </center>
 
-== Notas ==
 {{reflist}}
 {{reflist-end}}
 

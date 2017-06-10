@@ -24,24 +24,13 @@
 <body>
 
 <div class="main">
-<h1><a href="./index.html">Directorio de locapedias</a></h1>
+<h1><a href="./index.html">Mapa de locapedias</a></h1>
 
 <p>La primera <b>enciclopedia wiki</b> sobre un municipio de la que se tiene constancia es la de <a href="http://www.arija.org/es/index.php?title=Portada">Arija</a>, situado en la provincia de Burgos, que fue creada en 2003.</p>
 
 <p>El término <b><a href="http://www.aromeo.net/?p=746">locapedia</a></b><sup>[<a href="#ref1">1</a>]</sup> fue acuñado tiempo después y desde entonces fueron surgiendo más proyectos wiki que recopilaban conocimiento local acerca de multitud de localidades, provincias y otras regiones. La locapedia con mayor número de artículos es <a href="https://cordobapedia.wikanda.es">Cordobapedia</a> que cuenta con más de 17000.</p>
 
 <p>Si quieres crear una locapedia, puedes hacerlo fácilmente en el <a href="https://wikis.cc">hosting de Wikis.cc</a>.</p>
-
-<table id="toc" class="wikitable">
-<tr><th>Tabla de contenidos</th></tr>
-<tr><td>
-&nbsp;1. <a href="#Mapa">Mapa</a><br/>
-&nbsp;2. <a href="#Estadísticas">Estadísticas</a><br/>
-&nbsp;3. <a href="#Notas">Notas</a><br/>
-</td></tr>
-</table>
-
-<h2 id="Mapa">Mapa</h2>
 
 <div id="map" style="width: 100%; height: 400px;"></div>
 
@@ -85,14 +74,12 @@
 
     for (var i = 0; i < wikis.length; i++) {
         marker = new L.marker([wikis[i][1],wikis[i][2]])
-            .bindPopup('<b><a href="' + wikis[i][3] + '">' + wikis[i][0] + '</a></b><br/><a href="' + wikis[i][3] + '"><img src="images/' + wikis[i][4] + '" width="200px" /></a>')
+            .bindPopup('<b><a href="' + wikis[i][3] + '">' + wikis[i][0] + '</a></b><br/><a href="' + wikis[i][3] + '" title="Acceder a ' + wikis[i][0] + '"><img src="images/' + wikis[i][4] + '" width="200px" alt="Logotipo de ' + wikis[i][0] + '" /></a>')
             .addTo(map);
         if ( wikis[i][0] === "Cadizpedia" ) { marker.openPopup(); }
     }
     
 </script>
-
-<h2 id="Estadísticas">Estadísticas</h2>
 
 <center>
 <table class="wikitable sortable" style="width: 100%;text-align: center;">
@@ -195,7 +182,7 @@
     <td>2007</td>
 </tr>
 <tr>
-    <td><a href="http://www.rosespedia.cat">Roses</a></td>
+    <td><a href="http://www.rosespedia.cat">Rosèspedia</a></td>
     <td>Roses</td>
     <td>500+</td>
     <td>100+</td>
@@ -216,7 +203,7 @@
     <td>2010</td>
 </tr>
 <tr>
-    <td><a href="https://vilapedia.wikis.cc">Vilapedia</a></td>
+    <td><a href="https://vilapedia.wikis.cc">Vilapèdia</a></td>
     <td>Villareal</td>
     <td>900+</td>
     <td>800+</td>
@@ -260,7 +247,6 @@
 </table>
 </center>
 
-<h2 id="Notas">Notas</h2>
 <ol>
 <!--references-->
 

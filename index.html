@@ -24,13 +24,13 @@
 <body>
 
 <div class="main">
-<h1><a href="./index.html">Mapa de locapedias</a></h1>
+<h1><a href="./index.html">Mapa de Locapedias</a></h1>
 
-<p>La primera <b>locapedia</b> o <b>enciclopedia wiki local</b> de la que se tiene constancia es <a href="http://www.arija.org/es/index.php?title=Portada">Arija.org</a> y fue creada en el año 2003. Esta locapedia trata sobre el municipio de Arija situado en la provincia de Burgos.</p>
+<p>La primera <b>locapedia</b> o <b>enciclopedia wiki local</b> creada en España fue <a href="http://www.arija.org/es/index.php?title=Portada">www.arija.org</a> en el año 2003. Esta locapedia trata sobre el municipio de Arija de la provincia de Burgos.</p>
 
-<p>El término <b><a href="http://www.aromeo.net/?p=746">locapedia</a></b><sup>[<a id="refback1" href="#ref1">1</a>]</sup> fue acuñado tiempo después y desde entonces fueron surgiendo más proyectos wiki que recopilaban conocimiento local acerca de multitud de localidades, provincias y otras regiones. La locapedia con mayor número de artículos es <a href="https://cordobapedia.wikanda.es">Cordobapedia</a> que cuenta con más de 17000.</p>
+<p>El término <b><a href="http://www.aromeo.net/?p=746">locapedia</a></b><sup>[<a id="refback1" href="#ref1">1</a>]</sup> fue acuñado tiempo después y desde entonces han ido surgiendo más proyectos wiki que recopilan conocimiento local acerca de multitud de localidades, provincias y regiones. La locapedia con mayor número de artículos es <a href="https://cordobapedia.wikanda.es">Cordobapedia</a> que cuenta con más de 17.000 y la que más imágenes tiene es <a href="http://www.jerezsiempre.com">JerezSiempre</a> con 34.000.</p>
 
-<p>Si quieres crear una locapedia, puedes hacerlo fácilmente en el <a href="http://wikis.cc">hosting de Wikis.cc</a>.</p>
+<p>Si te gustaría crear una locapedia, puedes hacerlo fácilmente en el <a href="http://wikis.cc">hosting de Wikis.cc</a>.</p>
 
 <div id="map" style="width: 100%; height: 400px;"></div>
 
@@ -74,7 +74,7 @@
 
     for (var i = 0; i < wikis.length; i++) {
         marker = new L.marker([wikis[i][1],wikis[i][2]])
-            .bindPopup('<b><a href="' + wikis[i][3] + '">' + wikis[i][0] + '</a></b><br/><a href="' + wikis[i][3] + '" title="Acceder a ' + wikis[i][0] + '"><img src="images/' + wikis[i][4] + '" width="200px" alt="Logotipo de ' + wikis[i][0] + '" /></a>')
+            .bindPopup('<b><a href="' + wikis[i][3] + '">' + wikis[i][0] + '</a></b><br/><a href="' + wikis[i][3] + '" title="Acceder a ' + wikis[i][0] + '"><img src="images/' + wikis[i][4] + '" width="150px" alt="Logotipo de ' + wikis[i][0] + '" /></a>')
             .addTo(map);
         if ( wikis[i][0] === "Cadizpedia" ) { marker.openPopup(); }
     }
@@ -102,7 +102,7 @@
     <td>Arija</td>
     <td>2000+</td>
     <td>6000+</td>
-    <td>2003</td>
+    <td><b>2003</b></td>
 </tr>
 <tr>
     <td><a href="https://cadizpedia.wikanda.es">Cadizpedia</a></td>
@@ -114,7 +114,7 @@
 <tr>
     <td><a href="https://cordobapedia.wikanda.es">Cordobapedia</a></td>
     <td>Provincia de Córdoba</td>
-    <td>17000+</td>
+    <td><b>17000+</b></td>
     <td>14000+</td>
     <td>2005</td>
 </tr>
@@ -164,7 +164,7 @@
     <td><a href="http://www.jerezsiempre.com">JerezSiempre</a></td>
     <td>Jerez de la Frontera</td>
     <td>14000+</td>
-    <td>34000+</td>
+    <td><b>34000+</b></td>
     <td>2007</td>
 </tr>
 <tr>
@@ -247,6 +247,8 @@
 </table>
 </center>
 
+<p><b>Notas</b></p>
+
 <ol>
 <!--references-->
 
@@ -257,11 +259,7 @@
 
 <div class="footer">
 <hr/>
-<a href="http://wikis.cc">Crea tu wiki</a> · 
-<a href="http://locapedia.wikis.cc">Crea una locapedia</a> · 
-<a href="http://fondos.org.es">Fondos de pantalla</a> · 
-<a href="http://librefind.org">LibreFind</a> · 
-<a href="http://wikis.org.es">Locapedias</a>
+<p><a href="http://wikis.cc">Crea tu wiki</a> · <a href="http://locapedia.wikis.cc">Crea una locapedia</a> · <a href="http://fondos.org.es">Fondos de pantalla libres</a> · <a href="http://librefind.org">LibreFind</a> · <a href="http://wikis.org.es">Locapedias</a></p>
 </div>
 
 </body>

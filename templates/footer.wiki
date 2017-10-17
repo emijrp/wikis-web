@@ -1,10 +1,6 @@
 <div class="footer">
 <hr/>
-<a href="http://wikis.cc">Crea tu wiki</a> · 
-<a href="http://locapedia.wikis.cc">Crea una locapedia</a> · 
-<a href="http://fondos.org.es">Fondos de pantalla</a> · 
-<a href="http://librefind.org">LibreFind</a> · 
-<a href="http://wikis.org.es">Locapedias</a>
+[http://wikis.cc Crea tu wiki] · [http://locapedia.wikis.cc Crea una locapedia] · [http://fondos.org.es Fondos de pantalla libres] · [http://librefind.org LibreFind] · [http://wikis.org.es Locapedias]
 </div>
 
 </body>

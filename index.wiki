@@ -2,7 +2,7 @@
 <div class="main">
 = [[./index|Mapa de locapedias]] =
 
-La primera '''locapedia''' o '''enciclopedia wiki local''' sobre un municipio de la que se tiene constancia es la de [http://www.arija.org/es/index.php?title=Portada Arija], situado en la provincia de Burgos, que fue creada en 2003.
+La primera '''locapedia''' o '''enciclopedia wiki local''' de la que se tiene constancia es [http://www.arija.org/es/index.php?title=Portada Arija.org] y fue creada en el año 2003. Esta locapedia trata sobre el municipio de Arija situado en la provincia de Burgos.
 
 El término '''[http://www.aromeo.net/?p=746 locapedia]'''<ref>También se les conoce como localpedias, citywikis o regiowikis.</ref> fue acuñado tiempo después y desde entonces fueron surgiendo más proyectos wiki que recopilaban conocimiento local acerca de multitud de localidades, provincias y otras regiones. La locapedia con mayor número de artículos es <a href="https://cordobapedia.wikanda.es">Cordobapedia</a> que cuenta con más de 17000.
 

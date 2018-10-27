@@ -229,6 +229,3 @@ Si te gustaría '''crear una locapedia''', puedes hacerlo fácilmente en el [htt
 {{reflist-end}}
 
 {{footer}}
-
-</div>
-

@@ -1,6 +1,6 @@
 <div class="footer">
 <hr/>
-[http://wikis.cc Crea tu wiki] · [http://locapedia.wikis.cc Crea una locapedia] · [http://fondos.org.es Fondos de pantalla libres] · [http://librefind.org LibreFind] · [http://wikis.org.es Locapedias]
+[http://wikis.cc Crea tu wiki] · [http://locapedia.wikis.cc Crea una locapedia] · [http://fondos.org.es Fondos de pantalla libres] · [https://librefind.wikis.cc/ LibreFind] · [http://wikis.org.es Locapedias]
 </div>
 
 </body>
